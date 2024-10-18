@@ -1,0 +1,68 @@
+body {
+    background-color: var(--corCinzaEscuro);
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --corCinzaEscuro: #121212;
+    --corRosa: #F8BBD0;
+    --corCinzaMedio: #1d1d1d;
+    --corCinzaClaro: #424242;
+    --corBranco: #FFFFFF;
+    --corRosaEscuro: #EC407A;
+}
+
+header {
+    height: 100px;
+    background-color: var(--corCinzaMedio);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: flex-start; /* Garante que os elementos estejam alinhados à esquerda */
+}
+
+#logo {
+    display: flex;
+    width: 80px;
+}
+
+#titulo {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--corRosa);
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+#botoes {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#botoes button {
+    background: linear-gradient(180deg, var(--corCinzaClaro) 50%, var(--corRosa) 50%);
+    background-size: 100% 200%;
+    width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    transition: background-position 0.2s ease-in-out, color 0.4s ease;
+    cursor: pointer;
+    color: var(--corBranco);
+}
+
+#botoes button:hover {
+    transform: scale(1.05);
+    background-position: 0 100%;
+    color: var(--corCinzaEscuro);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
