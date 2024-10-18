@@ -2,6 +2,11 @@ body {
     background-color: var(--corCinzaEscuro);
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente a div centro */
+    align-items: center; /* Centraliza verticalmente a div centro */
+    height: 100vh; /* Garante que ocupe toda a altura da tela */
+    flex-direction: column; /* Para alinhar o conteúdo em coluna */
 }
 
 :root {
@@ -19,12 +24,17 @@ header {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    justify-content: flex-start; /* Garante que os elementos estejam alinhados à esquerda */
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Para garantir que o header ocupe a largura total */
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0;
 }
 
 #logo {
     display: flex;
     width: 80px;
+    margin-left: 20px;
 }
 
 #titulo {
@@ -41,6 +51,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 20px;
 }
 
 #botoes button {
@@ -62,7 +73,14 @@ header {
     color: var(--corCinzaEscuro);
 }
 
-@keyframes scroll {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+#centro {
+    background-color: var(--corCinzaMedio);
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px; /* Espaço para o header */
 }
