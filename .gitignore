@@ -1,0 +1,22 @@
+# Ignorar pacotes do Node.js
+node_modules/
+
+# Ignorar arquivos de ambiente sensíveis
+.env
+firebaseConfig.js
+
+# Ignorar arquivos de log e temporários
+*.log
+*.tmp
+
+# Ignorar diretórios de build ou distribuição
+dist/
+build/
+
+# Ignorar configurações de IDEs e editores de texto
+.vscode/
+.idea/
+
+# Ignorar arquivos de sistema criados por macOS e Windows
+.DS_Store
+Thumbs.db

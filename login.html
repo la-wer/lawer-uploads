@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/images/logo.png" id="logo" alt="Logo do Site">
+        <h1 id="titulo">LAWER UPLOADS</h1>
+        <div id="botoes">
+            <button id="upload" onclick="window.location.href='index.html'">UPLOAD</button>
+            <button id="sharex">SHAREX</button>
+            <button id="chatterino">CHATTERINO</button>
+            <button id="sobre" onclick="window.location.href='sobre.html'">SOBRE</button>
+            <button id="login" onclick="window.location.href='login.html'">LOGIN</button>
+        </div>
+    </header>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="login-btn">Entrar</button>
+                
+                <p><a href="#" id="forgot-password">Esqueci minha senha</a></p>
+
+                <div class="social-login">
+                    <p>Ou entre com:</p>
+                    <button id="login-google" class="social-btn google-btn">Google</button>
+                </div>
+                <p class="register">Não tem uma conta? <a href="register.html">Registre-se</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="firebaseConfig.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
