@@ -3,10 +3,10 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente a div centro */
-    align-items: center; /* Centraliza verticalmente a div centro */
-    height: 100vh; /* Garante que ocupe toda a altura da tela */
-    flex-direction: column; /* Para alinhar o conteúdo em coluna */
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    flex-direction: column; 
 }
 
 :root {
@@ -26,8 +26,8 @@ header {
     padding: 0 20px;
     justify-content: flex-start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Para garantir que o header ocupe a largura total */
-    position: fixed; /* Fixa o header no topo da página */
+    width: 100%;
+    position: fixed;
     top: 0;
 }
 
@@ -35,6 +35,7 @@ header {
     display: flex;
     width: 80px;
     margin-left: 20px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #titulo {
@@ -44,6 +45,7 @@ header {
     color: var(--corRosa);
     margin-left: 20px;
     font-size: 24px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #botoes {
@@ -52,6 +54,7 @@ header {
     align-items: center;
     gap: 10px;
     margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #botoes button {
@@ -65,6 +68,7 @@ header {
     transition: background-position 0.2s ease-in-out, color 0.4s ease;
     cursor: pointer;
     color: var(--corBranco);
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #botoes button:hover {
@@ -94,12 +98,14 @@ header {
 #icone {
     font-size: 96px;
     margin: 0px;
-    margin-top: 60px;
+    margin-top: 40px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #arquivo {
     margin: 0px;
     margin-bottom: 60px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #centro button {
@@ -109,4 +115,10 @@ header {
     border: none;
     text-decoration: none;
     background-color: var(--corRosa);
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#centro button:hover {
+    transform: scale(1.05);
 }
