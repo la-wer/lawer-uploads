@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -32,18 +31,18 @@
         </div>
         <div id="colunas">
             <div id="coluna1">
-                <p id="request">Request URL</p>
+                <p>Request URL</p>
                 <p>Form field</p>
                 <p>Extra headers</p>
                 <p>Image link</p>
                 <p>Deletion link</p>
             </div>
             <div id="coluna2">
-                <p id="request">https://laweruploads/upload</p>
-                <p>file</p>
+                <p class="copiar" data-text="https://laweruploads/upload">https://laweruploads/upload</p>
+                <p class="copiar" data-text="file">file</p>
                 <p id="vazio">~vazio~</p>
-                <p>{message}</p>
-                <p>{delete}</p>
+                <p class="copiar" data-text="{message}">{message}</p>
+                <p class="copiar" data-text="{delete}">{delete}</p>
             </div>
         </div>
         <div id="baixinho">
@@ -51,6 +50,8 @@
             <p>Chatterino -> Settings -> External Tools -> Image Uploader</p>
         </div>
     </div>
+    <span id="copiado-msg" class="oculto">Texto copiado!</span>
+    <script src="copy.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

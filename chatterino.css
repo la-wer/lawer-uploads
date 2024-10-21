@@ -65,3 +65,39 @@
     font-size: 16px;
     justify-items: center;
 }
+
+.copiar {
+    cursor: pointer;
+    color: #F8BBD0;
+    transition: color 0.3s;
+}
+
+.copiar:hover {
+    color: #EC407A;
+}
+
+.copiar.copiado {
+    background-color: #424242;
+    color: #F8BBD0;
+    border-radius: 4px;
+}
+
+#copiado-msg {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--corCinzaMedio);
+    color: var(--corBranco);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: none;
+}
+
+#copiado-msg.visivel {
+    display: block;
+}
