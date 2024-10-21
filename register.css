@@ -54,7 +54,7 @@ h2 {
 .input-group label {
     display: block;
     margin-bottom: 5px;
-    color: #F8BBD0;
+    color: var(--corRosa);
 }
 
 .input-group input {
