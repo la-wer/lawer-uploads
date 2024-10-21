@@ -79,18 +79,4 @@
     transform: scale(1.05);
   }
 
-#forgot-password {
-    color: #F8BBD0; /* Cor rosa */
-    text-decoration: none;
-    margin-top: 10px;
-    display: block;
-}
-
-#forgot-password:hover {
-    text-decoration: underline;
-}
-
-#forgot-password:visited {
-    color: #F8BBD0; /* Cor rosa mesmo após ser clicado */
-}
 
