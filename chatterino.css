@@ -68,17 +68,17 @@
 
 .copiar {
     cursor: pointer;
-    color: #F8BBD0;
+    color: var(--corRosa);
     transition: color 0.3s;
 }
 
 .copiar:hover {
-    color: #EC407A;
+    color: var(--corRosaEscuro);
 }
 
 .copiar.copiado {
     background-color: #424242;
-    color: #F8BBD0;
+    color: var(--corRosa);
     border-radius: 4px;
 }
 
